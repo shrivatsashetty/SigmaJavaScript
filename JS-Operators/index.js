@@ -17,7 +17,7 @@ console.log(a % b);
 
 /* Math function */
 // quotient division (integer division)
-console.log(Math.trunc(a/b)); // drops decimal part, works for negative integers as well
+console.log(Math.trunc(a/b)); // truncates the decimal part, works for negative integers as well
 // extracting decimal remainder
 console.log((a/b) % 1);
 
