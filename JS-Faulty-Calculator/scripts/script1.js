@@ -21,6 +21,7 @@ function calculate () {
     let result;
 
     let flag = Math.random();
+    console.log(flag);
 
     if ( operator == "+" ) {
         if (flag >= 0.25) {
@@ -59,6 +60,5 @@ function calculate () {
     }
 
     // view the result of the opration in the console
-    console.log(operandA, operator, operandB, "=", result);
-    console.log(flag);
+    alert(`${operandA} ${operator} ${operandB} = ${result}`);
 }
