@@ -28,3 +28,14 @@ const greet = (name) => {
 }
 
 greet("Shri")
+
+/* JavaScript eval() function */
+console.log('2 + 2'); // 2 + 2
+console.log(eval('2 + 2')); // 4
+
+console.log(new String('2 + 2')); // [String: '2 + 2']
+console.log(eval(new String('2 + 2'))); // [String: '2 + 2']
+
+console.log((new String('2 + 2')) == '22'); // false
+console.log((eval('2 + 2')) == '4'); // true
+

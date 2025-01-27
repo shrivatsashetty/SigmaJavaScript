@@ -8,23 +8,25 @@ let faultyMappings = {
 }
 
 function calculate() {
-    let operandA = parseInt(prompt("Enter operand A"));
-    let operator = prompt("Select an operation: + - * / :");
-    let operandB = parseInt(prompt("Enter operand B"));
+    // take the arithmetic expression which you want to evaluate as input
+    let operation = prompt("Enter below the expression to evaluate:");
     let result;
 
     let flag = Math.random();
     console.log(flag);
 
     if( flag > 0.25 ) {
-        result = eval(`${operandA} ${operator} ${operandB}`)
-        alert(`${operandA} ${operator} ${operandB} = ${result}`);
+        result = eval(operation);
+        window.alert(`${operation} = ${result}`);
     }
     else {
-        let op = faultyMappings[operator];
-        result = eval(`${operandA} ${op} ${operandB}`)
-        alert(`${operandA} ${op} ${operandB} = ${result}`);    
+        // extract the operator
+        let operator = operation.match(/[+\-*/]/)[0];
+        // check the faulty operation corresponding to the operation
+        let faultyOp = faultyMappings[operator];
+        // replace the operator with the faulty one in the expression
+        result = eval(operation.replace(operator, faultyOp));
+        window.alert(`${operation} = ${result}`);
     }
-
 }
 
