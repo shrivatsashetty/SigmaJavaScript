@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JavaScript DOM</title>
+	</head>
+	<body>
+        <h1>JavaScript DOM</h1>
+        <p> JavaScript DOM is used to model the entire HTML document in an object </p>
+
+        <div id="div1" class="container">
+            I'm a container
+        </div>
+        <!-- internal JavaScript -->
+        <script>
+            document.title = "Hello World!!!";
+
+            console.log(window.document.body);
+            /* document is a global object it can be accessed without the use of window keyword */
+            document.body.style.backgroundColor = "skyblue";
+            
+            /* select any element, right click and inspect it
+            then in the dev tools console tab use the following query
+            $0.style.backgroundColor = "lightgreen"; */
+        </script>
+    </body>
+</html>
