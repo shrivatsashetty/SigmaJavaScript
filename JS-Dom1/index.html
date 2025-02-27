@@ -12,10 +12,11 @@
         <div id="div1" class="container">
             I'm a container
         </div>
+
         <!-- internal JavaScript -->
         <script>
             document.title = "Hello World!!!";
-
+            console.log(typeof document.title); // string
             console.log(window.document.body);
             /* document is a global object it can be accessed without the use of window keyword */
             document.body.style.backgroundColor = "skyblue";
