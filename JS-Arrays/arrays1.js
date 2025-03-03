@@ -12,6 +12,8 @@ names[1] = "Hari";
 names[3] = "Omkar";
 console.log(names); // [ 'Shri', 'Hari', <1 empty item>, 'Omkar' ]
 
+/* initializing an array with const keyword prevents it from getting reassigned a new value
+    however array mutation is still possible */
 const evenNums = [2, 4, 6, 8];
 evenNums[0] = 0; // array mutation
 // evenNums = [3, 5, 7]; // TypeError: Assignment to constant variable.
