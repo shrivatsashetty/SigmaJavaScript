@@ -15,10 +15,11 @@
 
         <!-- internal JavaScript -->
         <script>
-            document.title = "Hello World!!!";
-            console.log(typeof document.title); // string
-            console.log(window.document.body);
+            /* change the tabs title */
+            window.document.title = "Hello World!!!";
             /* document is a global object it can be accessed without the use of window keyword */
+            console.log(typeof document.title); // string
+            console.log(document.body);
             document.body.style.backgroundColor = "skyblue";
             
             /* select any element, right click and inspect it
