@@ -67,3 +67,56 @@ console.log(box3.nextElementSibling) // <div class="box">Box4</div>
 console.log(box3.previousSibling) // #text
 console.log(box3.previousElementSibling) // <div class="box">Box2</div>
 
+/* manipulating an HTML table using DOM */
+let tbl = document.body.children[1];
+
+/* changing caption */
+tbl.caption.innerHTML = "Hello World!!!";
+
+/* log the entire table element */
+console.log("Here's the table:\n",tbl);
+/* storing the table sections in an array */
+let tblSections = Array.from(tbl.children);
+
+console.log("A table contains the following sections:");
+
+for (let i=0; i<tblSections.length;i++) {
+    console.log(tblSections[i]);
+}
+
+console.log("Table Sections in an Array:", tblSections);
+
+/* get only the table header */
+console.log("Here's the table header:\n", tbl.tHead);
+/* get the count of heading columns */
+console.log("Total no of heading columns:\n", tbl.tHead.children[0].children.length);
+
+/* getting all the rows in the table */
+let tblRows = tbl.rows;
+console.log("Here is the list of all the rows in the table");
+
+/* iterating over each row using a for of loop */
+for (const row  of tblRows) {
+    console.log(row);
+}
+
+console.log("Here's the Table's Footer:\n", tbl.tFoot);
+
+/* getting the data rows .i.e. the rows within tbody
+accessing the table's cells */
+let dataRows = tbl.tBodies[0].children;
+
+console.log(`Total ${dataRows.length} Data Rows in the table`);
+
+/*or of loop is used to iterate over iterable objects,
+like an array, list or a collection of objects */
+for (const row of dataRows) {
+    // let currentRowIndex = row.sectionRowIndex;
+    // let currentRowLength = row.cells.length;
+    // console.log(`Row no ${currentRowIndex + 1} has ${currentRowLength} cells`)
+    console.log("Overall Row Index",row.rowIndex);
+    console.log("Section Row Index",row.sectionRowIndex);
+    console.log(row);
+}
+
+
