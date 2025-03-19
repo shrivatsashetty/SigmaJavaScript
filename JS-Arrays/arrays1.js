@@ -90,3 +90,31 @@ console.log(summation); // 55
 
 /* create an array from other iterable objects */
 console.log( Array.from("Shrivatsa") );
+
+/* we can also use it to return an array from any object with a length property */ 
+let arrayLike = {
+    0:1,
+    1:2,
+    2:3,
+    length:3 // this key-value pair of the ArrayLike object specifies the total no of key-value pairs in the object excluding itself
+};
+
+let newArray = Array.from(
+    arrayLike,
+    (value, index) => value, // this is the default function will be called on every item (key-value pair) in the ArrayLike object
+);
+
+console.log(newArray); // [ 1, 2, 3 ]
+
+
+/* iterating over each item of the array */ 
+let arrayIndices = Array(5).keys(); // returns an iterator object consisting of the indices of the empty array element
+console.log(arrayIndices); // Object [Array Iterator] {}
+arrayIndices.forEach(index => console.log(index)); // 0 1 2 3 4
+
+/* creating an array of number range using Array.forEach() */ 
+let rangeNums = Array.from(
+    Array(5).keys(),
+    key => key + 1
+);
+console.log(rangeNums); // [ 1, 2, 3, 4, 5 ]

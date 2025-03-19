@@ -1,4 +1,11 @@
 console.log("Hello World!!!");
+
+/* getting the body element using DOM method */ 
+console.log("Here's the body element:\n", document.body);
+/* getting the root element i.e. html element using DOM */ 
+console.log("Here's the root element:\n",document.documentElement);
+
+/* getting an element by Id */ 
 let firstBox = document.getElementById("b0");
 firstBox.firstElementChild.innerHTML = firstBox.firstElementChild.innerHTML.concat( " ", "(First)" );
 
@@ -12,7 +19,8 @@ for (const box of boxes) {
     box.style.color = "red";
 }
 
-/* query the first matching element using a class */ 
+/* query the first matching element using a class,
+this mehtod returns a node list object */ 
 let firstEvenPosBox = document.querySelector(".pos-even");
 firstEvenPosBox.style.color = "green";
 

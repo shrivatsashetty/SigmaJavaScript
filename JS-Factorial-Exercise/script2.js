@@ -1,12 +1,11 @@
+/* a user defined function to generate an array of given length */ 
 function generateNumArray(len) {
-    let numArr = [];
-    for (len; len > 0; len--) {
-        numArr.push(len);
-    }
-    return numArr;
+    return Array.from(Array(len).keys(), key => (key + 1) );
 }
 
+/* a function to calculate factorial from an array of numbers using Array.reduce() method */ 
 function calcFactorialFromArray(numArr) {
+    console.log(numArr); // to check if the array passed in is right
     let factorial = numArr.reduce( (total, currentValue) => total * currentValue, 1);
     return factorial;
 }
