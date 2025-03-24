@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    text-decoration: underline black;
+}
+
+.flexbox {
+    display: flex;
+    padding: 10px;
+}
+
+.container {
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.boxes {
+    justify-content: center;
+    column-gap: 3%;
+    border: 2px solid red;
+
+}
+
+.box {
+    border: 3px solid black;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 10vh;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.box-btn {
+    justify-content: center;
+    border: 2px solid blue;
+}
+
+.box-btn button {
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to bottom right, red,orange,yellow,green,blue,indigo,violet);
+}
+
