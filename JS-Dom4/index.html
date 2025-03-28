@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JS Dom 4</title>
+        <style>
+            * {
+                padding: 5px;
+            }
+
+            .container {
+                border: 2px solid black;
+            }
+
+            .box {
+                border: 2px solid red;
+            }
+
+            p {
+                border: 2px dashed blue;
+            }
+        </style>
+	</head>
+
+	<body>
+        <div class="container">
+
+            <div hidden id="b1" class="box" style="color: red;" >
+                Hello World!!!
+                <p hidden id="p1" class="para hdn para-hdn">
+                    I'm a hideable paragraph!!!
+                </p>
+            </div>
+
+            <!-- I'm a text comment -->
+             
+            <p>I'm a paragraph</p>
+
+            <div id="b2" class="box" data-author="shrivatsa" data-creation-date="March 2024">
+                I'm a text inside this div and outside the para
+                <p id="p2" class="para"> I'm the text content inside a para element</p>
+            </div>
+
+            <p id="p3" data-score="2" data-message="Hi"> Data Para 1 </p>
+            <p id="p4" data-score="3" data-message="Hello"> Data Para 2 </p>
+            <p id="p5" data-score="2" data-message="Namaste"> Data Para 3 </p>
+            <p id="p6" data-score="3" data-message="Bye"> Data Para 4 </p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
