@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Sample webpage for practicing JS DOM">
 		<title>JS Dom 4</title>
         <style>
             * {
@@ -20,14 +21,31 @@
             p {
                 border: 2px dashed blue;
             }
+
+            .bg-lavender {
+                background-color: lavender;
+            }
+
+            .col-aqua {
+                color: aqua;
+            }
+
+            ul {
+                list-style: none;
+                border: 2px solid green;
+            }
+
+            li {
+                color: blueviolet;
+            }
         </style>
 	</head>
 
 	<body>
-        <div class="container">
+        <div class="container box-container bg-azure ">
 
             <div hidden id="b1" class="box" style="color: red;" >
-                Hello World!!!
+                <span class="col-aqua">Hello World!!!</span>
                 <p hidden id="p1" class="para hdn para-hdn">
                     I'm a hideable paragraph!!!
                 </p>
@@ -46,6 +64,10 @@
             <p id="p4" data-score="3" data-message="Hello"> Data Para 2 </p>
             <p id="p5" data-score="2" data-message="Namaste"> Data Para 3 </p>
             <p id="p6" data-score="3" data-message="Bye"> Data Para 4 </p>
+
+            <!-- <ul id="items">
+                <li id="item-1" >Apple</li>
+            </ul> -->
         </div>
 
         <script src="script.js"></script>
