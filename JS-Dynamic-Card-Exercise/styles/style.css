@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.card-container {
+    display: inline-flex;
+    box-sizing: border-box;
+    width: fit-content;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    column-gap: 1%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+}
+
+.card-desc {
+    flex-direction: column;
+    row-gap: 10px;
+    /* Prevent this flex item from shrinking */
+    flex-shrink: 0;
+    /* Allow this flex item to grow and take remaining space */
+    /* flex-grow: 1; */
+}
+
+.card-desc h2 {
+    font-size: large;
+    /* Ensure the heading doesn't break due to very long words */
+    word-break: break-word;
+}
+
+.card-desc h3 {
+    font-weight: 100;
+    font-size: medium;
+}
+
+.card-thumb {
+    display: inline;
+    position: relative;
+    left: 0px;
+    border-radius: 5px;
+}
+
+.img-tumbnail {
+    border-radius: 10px;
+}
+
+.timestamp {
+    display: inline;
+    position: absolute;
+    right: 3%;
+    bottom: 8%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4px;
+    border-radius: 10px;
+    padding: 3px;
+    color: white;
+}
