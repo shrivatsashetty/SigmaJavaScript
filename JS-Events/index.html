@@ -13,12 +13,45 @@
             </div>
 
             <div id="b2" class="box">
-                <button id="btn-2">Double Click Me</button>
+                <button id="btn-2">Right Click Me</button>
             </div>
             
             <div id="b3" class="box">
-                <button id="btn-3">Right Click Me</button>
+                <input checked type="checkbox" id="vehicle1">
+                <button id="btn-3">Double Click Me to toggle checkbox</button>
             </div>
+
+            <div id="b4" class="box">
+                <img id="gif-smiley" src="images/smiley.gif" alt="">
+                <p>Hover over the above image</p>
+            </div>
+
+            <!-- creating a focusable div by setting the tabindex attribute -->
+            <div id="b5" class="box" tabindex="0">
+                <p>Keep the mouse over this box, click it, and then press any key</p>
+            </div>
+        </div>
+
+        <div id="form-1" class="form-container">
+            <form action="/JS-Dom1/index.html" method="post">
+                <h2>Data Form</h2>
+                <p>
+                    <label for="username">Name:</label>
+                    <input type="text" id="input-name" name="user_name" >
+                </p>
+
+                <p>
+                    <label for="input-email" placeholder="focus to set random bg-color">Email:</label>
+                    <input type="text" id="input-email" name="user_email">
+                </p>
+
+                <p>
+                    <label for="mssg">Message:</label>
+                    <textarea name="user_message" id="mssg">Hello,</textarea>
+                </p>
+
+                <input type="submit" value="Submit">
+            </form>
         </div>
 
         <script src="script.js"></script>
