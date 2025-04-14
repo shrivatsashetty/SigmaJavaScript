@@ -1,0 +1,17 @@
+.container {
+    border: 2px solid black;
+    padding: 30px;
+}
+
+.cont-level-0 {
+    background-color: orangered;
+}
+
+.cont-level-1 {
+    background-color: orange;
+}
+
+.cont-level-2 {
+    background-color: lightsalmon;
+    cursor: pointer;
+}
