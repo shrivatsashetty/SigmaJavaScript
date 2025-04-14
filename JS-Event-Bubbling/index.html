@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event Bubling</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- placing the script tag in the head using the defer attribute
+     is the modern new best practice -->
+    <!-- <script src="script.js" defer></script> -->
+</head>
+<body>
+    <div  id="b1" class="container cont-level-0">
+        grand parent box
+        <section  id="b2" class="container cont-level-1">
+            parent box(Event Bubles from here)
+            <p  id="b3" class="container cont-level-2">
+                child box(No Bubling)
+            </p>
+        </section>
+    </div>
+
+    <script src="script.js" ></script>
+</body>
+</html>
