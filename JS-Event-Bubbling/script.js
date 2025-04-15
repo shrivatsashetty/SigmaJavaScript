@@ -28,7 +28,7 @@ grandParent.addEventListener(
 );
 
 /* example of removing an event listner */ 
-function alerHelloWorld() {
+function alertHelloWorld() {
     window.alert("Hello World!!!");
 }
 
@@ -42,11 +42,11 @@ document.addEventListener(
 /* example of removing an event listner */
 grandParent.addEventListener(
     "click",
-    alerHelloWorld
+    alertHelloWorld
 );
 
 grandParent.removeEventListener(
     "click",
-    alerHelloWorld
+    alertHelloWorld
 );
 
