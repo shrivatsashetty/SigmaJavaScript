@@ -13,6 +13,7 @@ function getRandomColor() {
 
 window.setInterval(
     () => {
+        // background-color chages after every two seconds
         parent.style.backgroundColor = getRandomColor();
     },
     2000 // the unit is in miliseconds
@@ -20,6 +21,7 @@ window.setInterval(
 
 window.setTimeout(
     () => {
+        // background color changes 3 seconds after the page loads, only once
         grandParent.style.backgroundColor = getRandomColor();
     }, 
     3000
