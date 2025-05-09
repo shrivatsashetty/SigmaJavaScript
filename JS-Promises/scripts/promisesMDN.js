@@ -1,11 +1,10 @@
-function getRandomBool() {
-    return Math.floor(Math.random()*2);
-}
+/* an arrow function that returns either 0 or 1 */
+const getRandomBool = () => Math.floor(Math.random()*2);
 
 function successCallback(result) {
     console.log(`Audio file ready at URL: ${result}`);
 }
-  
+
 function failureCallback(error) {
     console.error(`Error generating audio file: ${error}`);
 }
