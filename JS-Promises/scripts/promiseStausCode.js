@@ -30,15 +30,16 @@ console.log('This script randomly returns an HTTP status code with delay of few 
 // );
 
 promiseStatusCode.then( 
-    // then takes a callback function an an arg
-    (errCode) => {
-        console.log(errCode);
-    }
-).catch(
-    (errCode) => {
-        console.log(errCode);
-    }
-).finally(
-    console.log("Program finished, awaiting response...")
-);
+        // then takes a callback function an an arg
+        (errCode) => {
+            console.log(errCode);
+        }
+    ).catch(
+        (errCode) => {
+            console.log(errCode);
+        }
+    ).finally(
+        console.log("Program finished, awaiting response...")
+    );
+
 
