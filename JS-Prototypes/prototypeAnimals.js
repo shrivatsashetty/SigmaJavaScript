@@ -1,14 +1,14 @@
 let animal = {
-  lives: true
+	lives: true
 }
 
 let cat = {
-  runs: true,
-  wild: false
+	runs: true,
+	wild: false
 }
 
 let tiger = {
-  wild: true
+	wild: true
 }
 
 console.log(tiger.wild); // true
@@ -26,3 +26,7 @@ cat.__proto__ = animal;
 console.log(tiger.runs); // true
 
 console.log(tiger.lives) // true
+
+console.log(Object.getPrototypeOf(tiger)); // { runs: true, wild: false }
+
+
