@@ -1,17 +1,28 @@
+/* Hoisting moves the function declaration 
+to the top of the program */
 
+greetByName("Shrivatsa"); // Namaste Shrivatsa!!!
+console.log(greetByName); // ƒ greetByName(username)
 
-sayNamaste(); // Namaste World!!!
-console.log(sayNamaste); // ƒ sayNamaste()
-
-console.log(sum(2, 3)); // 5
-
-function sayNamaste() {
-    console.log("Namaste World!!!");
+function greetByName(username) {
+    console.log(`Namaste ${username}!!!`);
 }
 
-function sum(a, b) {
+/* hoisting doesn't work for function name references */
+
+// console.log(sum(2, 3)); // Uncaught ReferenceError: Cannot access 'sum' before initialization
+
+const sum = (a, b) => {
     return a + b;
 }
 
-console.log(x);
+/* hoisting also works for variables 
+but only for those declared with "var" keyword */
+
+console.log(x); // undefined
 var x = 7;
+
+/* hoisting doesn't work for let keyword */
+
+// console.log(y);// Uncaught ReferenceError: Cannot access 'y' before initialization
+let y = 10;
