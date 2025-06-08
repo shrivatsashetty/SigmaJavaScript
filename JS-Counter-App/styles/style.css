@@ -1,0 +1,35 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30vw;
+    margin: auto;
+    margin-top: 20vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    font-size: 1.4rem;
+    background-color: #a1a1dd;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #5f5fed;
+    box-shadow: 5px 8px gray;
+}
+
+.display {
+    font-size: 10rem;
+}
