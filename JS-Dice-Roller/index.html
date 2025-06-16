@@ -11,7 +11,7 @@
     <body>
         <h1>Dice Roller</h1>
         <div id="div-page-content">
-            <form class="frm-game-controls" action="">
+            <div class="game-controls" >
                 <label id="lbl-dice-count" for="input-dice-count">No of Dice:</label>
                 <select name="dice-count" id="input-dice-count" >
                     <option value="1">1</option>
@@ -22,15 +22,16 @@
                     <option value="6">6</option>
                 </select>
 
-                <button class="btn-large" >Roll Dice</button>
-            </form>
+                <!-- add type="button" to prevent default submit behaviour of form button -->
+                <button id="btn-roll-dice" class="btn-large" type="button">Roll Dice</button>
+            </div>
 
-            <div class="dice-images">
-                <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1">
-                <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1">
-                <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1">
-                <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1">
-                <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1">
+            <div id="dice-holder" class="img-dice-container">
+                <!-- <img class="img-dice" src="/JS-Dice-Roller/assets/dice_1.svg" alt="Dice face 1"> -->
+                <!-- <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1"> -->
+                <!-- <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1"> -->
+                <!-- <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1"> -->
+                <!-- <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1"> -->
             </div>
         </div>
     </body>
