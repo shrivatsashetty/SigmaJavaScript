@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#div-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10vh;
+}
+
+.dice-images {
+    display: flex;
+    column-gap: 15px;
+    row-gap: 15px;
+    max-width: 18vw;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.img-dice {
+    width: 5vw;
+    height: 5vw;
+}
+
+#lbl-dice-count {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+#input-dice-count {
+    width: 60px;
+    /* appearance: none; */
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-large {
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+
+.frm-game-controls {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JS-Dice-Roller</title>
+        <script src="scripts/script.js" defer></script>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <body>
+        <h1>Dice Roller</h1>
+        <div id="div-page-content">
+            <form class="frm-game-controls" action="">
+                <label id="lbl-dice-count" for="input-dice-count">No of Dice:</label>
+                <select name="dice-count" id="input-dice-count" >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+
+                <button class="btn-large" >Roll Dice</button>
+            </form>
+
+            <div class="dice-images">
+                <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1">
+                <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1">
+                <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1">
+                <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1">
+                <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1">
+            </div>
+        </div>
+    </body>
+</html>
