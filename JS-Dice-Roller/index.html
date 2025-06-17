@@ -12,7 +12,7 @@
         <h1>Dice Roller</h1>
         <div id="div-page-content">
             <div class="game-controls" >
-                <label id="lbl-dice-count" for="input-dice-count">No of Dice:</label>
+                <label id="lbl-dice-count"  class="labels" for="input-dice-count">No of Dice:</label>
                 <select name="dice-count" id="input-dice-count" >
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -32,6 +32,11 @@
                 <!-- <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1"> -->
                 <!-- <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1"> -->
                 <!-- <img class="img-dice" src="assets/dice_1.svg" alt="Dice face 1"> -->
+            </div>
+
+            <div class="scoreboard" >
+                <p id="para-face-values" class="labels"></p>
+                <p id="para-total-score" class="labels" ></p>
             </div>
         </div>
     </body>

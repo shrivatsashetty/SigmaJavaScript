@@ -14,18 +14,18 @@ h1 {
     display: flex;
     column-gap: 15px;
     row-gap: 15px;
-    max-width: 18vw;
+    max-width: 25vw;
     flex-wrap: wrap;
 
     justify-content: center;
 }
 
 .img-dice {
-    width: 5vw;
-    height: 5vw;
+    width: 100px;
+    height: 100px;
 }
 
-#lbl-dice-count {
+.labels {
     font-size: 2rem;
     font-weight: 800;
 }
@@ -45,13 +45,25 @@ h1 {
     font-weight: bold;
     border-radius: 10px;
     padding: 10px;
-    background-color: skyblue;
+    background-color: rgba(144, 211, 237, 0.44);
     cursor: pointer;
 }
 
+.btn-large:hover {
+    background-color: rgba(144, 211, 237, 0.851);
+    box-shadow: 5px 2px 3px;
+}
 
-.frm-game-controls {
+.btn-large:active {
+    background-color: rgb(144, 164, 237);
+}
+
+.game-controls {
     display: flex;
     align-items: center;
     column-gap: 10px;
+}
+
+.scoreboard {
+    text-align: center;
 }

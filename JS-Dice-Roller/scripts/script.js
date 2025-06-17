@@ -8,7 +8,7 @@ function createDiceImg() {
     imgDice.classList.add("img-dice");
     let faceValue = getRandomInt(6);
     imgDice.src = `assets/dice_${faceValue}.svg`; // image path shold be relative to the html document
-    return imgDice;
+    return {imgDice: imgDice, faceValue: faceValue};
 }
 
 function main() {
@@ -21,10 +21,22 @@ function main() {
     // empty the content before appending new img elements
     diceHolder.innerHTML = "";
     
+    const faceValues = [];
+
     for (let i = 0; i < numDice; i++) {
         let dice = createDiceImg();
-        diceHolder.appendChild(dice);
+        diceHolder.appendChild(dice.imgDice);
+        faceValues.push(dice.faceValue);
     }
+
+    console.log(faceValues.join(", "));
+
+    const paraFaceValues = document.getElementById("para-face-values");
+    paraFaceValues.innerText = `Face Values: ${faceValues.join(", ")}`
+
+    const totalPoints = faceValues.reduce((accumulator, currentValue) => accumulator + currentValue );
+    document.getElementById("para-total-score").innerText = `Total Score: ${totalPoints}`;
+    
     
 }
 
