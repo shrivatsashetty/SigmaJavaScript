@@ -1,4 +1,4 @@
-/* The Fisher Yates shuffling Algorithm to randomly shuffle the elements of an array */ 
+/* The variation of the Fisher Yates shuffle to shuffle strings */ 
 function fisherYatesShuffle(str) {
     let strArray = [...str];
     for (let i = (strArray.length - 1); i > 0; i--) {
