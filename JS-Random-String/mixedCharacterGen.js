@@ -1,10 +1,11 @@
 /* The Fisher Yates shuffling Algorithm to randomly shuffle the elements of an array */ 
-function fisherYatesShuffle(array) {
-    for (let i = (array.length - 1); i > 0; i--) {
+function fisherYatesShuffle(str) {
+    let strArray = [...str];
+    for (let i = (strArray.length - 1); i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1)); // i+1 specifies the upper limit for the random number
-        [array[i], array[j]] = [array[j], array[i]]; // in-place swaping of array elements
+        [strArray[i], strArray[j]] = [strArray[j], strArray[i]]; // in-place swaping of array elements
     }
-    return array;
+    return strArray.join("");
 }
 
 function createRandomSubString(mainString, lenSubString) {
@@ -35,4 +36,4 @@ function createRandomPassword() {
     return password;
 }
 
-console.log(createRandomPassword());
+console.log("Your Random Password:", createRandomPassword());
