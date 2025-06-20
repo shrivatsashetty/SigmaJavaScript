@@ -1,0 +1,32 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-image: url("./../assets/cityscape_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+div.clock-holder {
+    position: relative;
+    top: 32vh;
+    display: flex;
+    justify-content: center;
+}
+
+div.lbl-time {
+    color: white;
+
+    width: 55%;
+    text-align: center;
+
+    font-size: 6rem;
+    font-family: monospace, sans-serif;
+    font-weight: bold;
+    backdrop-filter: blur(6px);
+}
