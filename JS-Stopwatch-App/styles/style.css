@@ -1,0 +1,59 @@
+h1 {
+    font-family: monospace, sans-serif;
+    text-align: center;
+    font-size: 3.6rem;
+}
+
+.container {
+    width: 30vw;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1vw;
+    position: relative;
+    left: 35vw;
+    top: 10vh;
+    background-color: azure;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.lbl {
+    font-size: 3rem;
+    font-family: monospace, sans-serif;
+
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.btn {
+    padding: 5px 20px 5px 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 3px 3px 3px;
+}
+
+/* style to apply when clicked */
+.btn:active {
+    opacity: 74%;
+}
+
+#btn-start-stop {
+    background-color: rgba(87, 227, 87, 0.593);
+}
+
+#btn-reset {
+    background-color: rgba(87, 101, 222, 0.593);
+}
