@@ -4,16 +4,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles/style.css">
-        <script src="scripts/script.js"></script>
+        <script src="scripts/script.js" defer></script>
         <title>JS-Stopwatch</title>
     </head>
     <body>
         <h1>Stopwatch</h1>
 
         <div class="container">
-            <div id="lbl-time" class="lbl">HH:MM:SS:MM</div>
+            <div id="lbl-time" class="lbl">00:00:00:000</div>
             <div class="controls">
-                <button id="btn-start-stop" class="btn" >Start</button>
+                <button id="btn-start" class="btn" >Start</button>
+                <button id="btn-stop" class="btn" >Stop</button>
                 <button id="btn-reset" class="btn" >Reset</button>
             </div>
         </div>

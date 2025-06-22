@@ -34,7 +34,7 @@ h1 {
 }
 
 .btn {
-    padding: 5px 20px 5px 20px;
+    padding: 5px 20px;
     font-size: 1.4rem;
     font-weight: bold;
     border-radius: 10px;
@@ -50,8 +50,12 @@ h1 {
     opacity: 74%;
 }
 
-#btn-start-stop {
+#btn-start {
     background-color: rgba(87, 227, 87, 0.593);
+}
+
+#btn-stop {
+    background-color: rgba(234, 55, 55, 0.593);
 }
 
 #btn-reset {
