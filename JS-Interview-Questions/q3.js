@@ -1,16 +1,14 @@
-let myStr = "aBcDeFgHiJkLmNoP";
+let myStr = "abcd";
 
-/* strings are immutable, hence we need to create an array to reverse the string */
-let arrStrReversed = [];
+function crearteMirrorStr(orignalStr) {
+	/* strings are immutable, hence we need to create an array to reverse the string */
+	let arrStrReversed = [];
+	
+	for(let i = (orignalStr.length - 1); i >= 0; i--) {
+	  arrStrReversed.push(orignalStr[i])
+	}
 
-for(let i = (myStr.length - 1); i >= 0; i--) {
-  // console.log(myStr.concat(myStr[i]));
-  // console.log(myStr[i])
-  arrStrReversed.push(myStr[i])
+	return orignalStr.concat(arrStrReversed.join(''));
 }
 
-console.log()
-
-let strReversed = myStr.concat(arrStrReversed.join(''));
-
-console.log(strReversed) // aBcDeFgHiJkLmNoPPoNmLkJiHgFeDcBa
+console.log(crearteMirrorStr(myStr)); // abcddcba
