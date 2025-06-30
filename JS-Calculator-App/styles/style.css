@@ -22,7 +22,7 @@
     background-color: blanchedalmond;
 }
 
-.display {
+#display-screen {
     width: 100%;
     height: calc(100%/6); /* 1/6th of the parent's width*/
     background-color: rgba(0, 0, 0, 0.364);
@@ -30,9 +30,10 @@
     font-family: 'Courier New', Courier, monospace;
     overflow-x: scroll;
     scrollbar-width:none;
+    text-align: left;
 }
 
-.numpad {
+#numpad {
     width: 100%;
     height: calc((5/6)*100%); /* 5/6th of the parent's width*/
 
@@ -45,17 +46,14 @@
 
 }
 
-.txt-holder {
-    font-weight: bold;
-    color: white;
-}
-
 .btn {
     border-radius: 50%; 
     width: 70%;
     font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.238);
     cursor: pointer;
+    font-weight: bold;
+    color: white;
 }
 
 .btn:active {
@@ -66,4 +64,14 @@
     background-color: rgba(255, 217, 0, 0.593);
 }
 
+#btn-evaluate {
+    background-color: rgb(168, 229, 78);
+}
 
+#btn-clear-screen {
+    background-color: rgb(246, 119, 119);
+}
+
+#btn-backspace {
+    background-color: plum;
+}
