@@ -5,29 +5,29 @@ at least 8 characters long, contains both uppercase and lowercase letters, and i
 let password = "#Abcdefghijk123";
 
 /* below we create some regexp objects */
-let patternLowercase = /[a-z]/; // matches any lowercase character
-let patternUpperCase = /[A-Z]/; // matches any uppercase character
-let patternDigits = /[0-9]/; // matches any digit from 0 to 9
-let patternSpecialChars = /[-\/~!#*$@_%+=.,^&(){}[\]|;:”<>?\\\\]/; // matches any special characters
-let patternNotAlphaNum = /[^a-zA-Z0-9]+/; // matches any character which is not an alphanumeric
+let regexpLowercase = /[a-z]/; // matches any lowercase character
+let regexpUpperCase = /[A-Z]/; // matches any uppercase character
+let regexpDigits = /[0-9]/; // matches any digit from 0 to 9
+let regexpSpecialChars = /[-\/~!#*$@_%+=.,^&(){}[\]|;:”<>?\\\\]/; // matches any special characters
+let regexpNotAlphaNum = /[^a-zA-Z0-9]+/; // matches any character which is not an alphanumeric
 
-console.log(patternLowercase.test(password));
-console.log(patternUpperCase.test(password));
-console.log(patternDigits.test(password));
-console.log(patternSpecialChars.test(password));
-console.log(patternNotAlphaNum.test(password));
+// console.log(regexpLowercase.test(password));
+// console.log(regexpUpperCase.test(password));
+// console.log(regexpDigits.test(password));
+// console.log(regexpSpecialChars.test(password));
+// console.log(regexpNotAlphaNum.test(password));
 
 function isStrongPassword(password) {
     if(
         (password.length > 8) 
         && 
-        patternDigits.test(password) 
+        regexpDigits.test(password) 
         && 
-        patternLowercase.test(password) 
+        regexpLowercase.test(password) 
         && 
-        patternDigits.test(password)
+        regexpDigits.test(password)
         &&
-        patternNotAlphaNum.test(password)
+        regexpNotAlphaNum.test(password)
     ) {
         return true;
     }
