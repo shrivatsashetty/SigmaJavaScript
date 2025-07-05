@@ -1,0 +1,65 @@
+body {
+    background-color: azure;
+}
+
+.container {
+    width: 500px;
+    height: 50vh;
+    margin: auto;
+    position: relative;
+    top: 10vh;
+    overflow: hidden;
+}
+
+.container-notes {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    row-gap: 8px;
+    background-color: rgb(140, 193, 239);
+    border-radius: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#user-note {
+    height: 70%;
+    resize: none;
+}
+
+#notes-heading {
+    height: 20%;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.txt-input {
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(140, 193, 239);
+}
+
+.txt-input:focus {
+    outline: none;
+}
+
+.horizontal-ruler {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.form-buttons {
+    text-align: center;
+}
+
+.form-buttons .form-btn {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#btn-clear-form {
+    background-color: lightsalmon;
+
+}
