@@ -10,14 +10,18 @@
 
     <body>
         <div class="container ">
-            <form id="frm-notes" action="" class="container-notes">
-                <input id="notes-heading" type="text" class="txt-input" value="Heading">
+            <form id="form-notes" action="" class="container-notes" autocomplete="off">
+                <input id="note-title" type="text" class="form-control txt-input" placeholder="Title" autocomplete="off">
+
                 <hr class="horizontal-ruler">
-                <textarea name="user-note" id="user-note" class="txt-input" rows="5" cols="19">Write your notes here...</textarea>
+
+                <textarea id="note-content" name="note-content" class="form-control txt-input" placeholder="Write Here..."></textarea>
+
                 <hr class="horizontal-ruler">
-                <div class="form-buttons">
-                    <button class="form-btn"  id="btn-clear-form" type="button">Clear</button>
-                    <input class="form-btn" id="btn-submit-form" type="button" value="Submit">
+
+                <div class="form-action-buttons">
+                    <button class="form-control form-btn" id="btn-submit-form" type="submit" name="btnSubmitForm" value="Submit">Save</button>
+                    <button class="form-control form-btn" id="btn-reset-form" type="reset" name="btnResetForm" value="Reset">Reset</button>
                 </div>
             </form>
         </div>

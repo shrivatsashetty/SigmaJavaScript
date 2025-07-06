@@ -22,12 +22,12 @@ body {
     box-sizing: border-box;
 }
 
-#user-note {
+#note-content {
     height: 70%;
     resize: none;
 }
 
-#notes-heading {
+#note-title {
     height: 20%;
     font-size: 3rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -49,17 +49,26 @@ body {
     width: 100%;
 }
 
-.form-buttons {
+.form-action-buttons {
     text-align: center;
 }
 
-.form-buttons .form-btn {
+.form-action-buttons .form-btn {
     padding: 10px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
+}
+
+.form-action-buttons .form-btn:active {
+    opacity: 70%;
+    box-shadow: 3px 3px 3px black;
+}
+
+#btn-reset-form {
+    background-color: rgb(219, 219, 126);
 }
 
 #btn-clear-form {
     background-color: lightsalmon;
-
 }
