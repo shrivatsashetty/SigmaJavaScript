@@ -46,5 +46,4 @@ let userStr = localStorage.getItem("user"); // will return a JSON formatted Stri
 let userObj = JSON.parse(userStr); // converted the string to object
 console.log(userStr); // {"username":"Shrivatsa","country":"India","age":24}
 
-
-
+localStorage.clear(); // clear the local storage once everything finished
