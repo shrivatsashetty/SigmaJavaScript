@@ -7,14 +7,14 @@
 const getRandomNum = (upperLimit) => Math.floor(Math.random()*upperLimit);
 
 /* simulating an enum using JavaScript object */
-const coffeMenu = {
-    CAPPUCCINO: "Cappuccino",
-    MOCHA: "Mocha",
-    AMERICANO: "Americano",
-    LATTE: "Latte",
-    BLACK: "Black",
-    ESPERESSO: "Experesso"
-}
+const coffeMenu = [
+     "Cappuccino",
+     "Mocha",
+     "Americano",
+     "Latte",
+     "Black Coffe",
+     "Experesso"
+]
 
 function brewCoffe(coffeType) {
     let randomDelay = getRandomNum(5);
@@ -27,10 +27,10 @@ function brewCoffe(coffeType) {
     );
 }
 
-async function orderCoffe() {
+async function orderCoffe(coffeType) {
     console.log("Brewing Coffe, Please Wait...");
     try {
-        let brewedCoffe = await brewCoffe(coffeMenu.AMERICANO);
+        let brewedCoffe = await brewCoffe(coffeType);
         console.log(brewedCoffe);
     } 
     catch (err) {
@@ -38,4 +38,6 @@ async function orderCoffe() {
     }    
 }
 
-orderCoffe();
+let orderNo = getRandomNum(6);
+
+orderCoffe(coffeMenu[orderNo]);
