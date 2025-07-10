@@ -3,6 +3,11 @@
     Write a function named filterProducts that takes an array of product objects and a filter criterion. 
     The function should return a new array containing only the products that match the filter criterion. */
 
+/* The Shopping Cart Totalizer:
+    You are working on an e-commerce website, and you need to calculate the total cost of items in the shopping cart. 
+    Implement a function named calculateTotal that takes an array of products with prices and quantities and returns the total cost. */
+
+
 /* creating a Smartphone constructor to create smartphone objects */
 
 function SmartPhone(brandName, modelName, price) {
@@ -35,4 +40,18 @@ const filteredProducts = products.filter(
 );
 
 console.log(filteredProducts);
+
+/* a function to calculate the total cost of items in cart */
+
+function calculateTotal(products) {
+    let total = 0;
+    for (const product of products) {
+        total += product.price;
+    }
+    return total;
+}
+
+let totalPrice = calculateTotal(filteredProducts);
+
+console.log(`Total Cost: ${totalPrice}`);
 
