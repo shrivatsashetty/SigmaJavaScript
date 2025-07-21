@@ -46,4 +46,20 @@ let userStr = localStorage.getItem("user"); // will return a JSON formatted Stri
 let userObj = JSON.parse(userStr); // converted the string to object
 console.log(userStr); // {"username":"Shrivatsa","country":"India","age":24}
 
+/* using same key overrides existing values */
+localStorage.setItem("test", "test1");
+localStorage.setItem("test", "test2");
+localStorage.setItem("test", "test3");
+
+/* storing arrays in local storage */
+let arrNums = [1, 2, 3];
+
+console.log(JSON.stringify(arrNums));
+
+localStorage.setItem("myArr", JSON.stringify(arrNums));
+
+let arrNumsMod = JSON.parse(localStorage.getItem("myArr"));
+arrNumsMod.shift();
+console.log(arrNumsMod);
+
 localStorage.clear(); // clear the local storage once everything finished
