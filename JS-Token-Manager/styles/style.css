@@ -1,0 +1,22 @@
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+form {
+    border: 2px solid black;
+    padding: 5px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 4px;
+}
+
+#txt-auth-token {
+    padding: 3px 6px;
+}
+
+/* .frm {
+
+} */
