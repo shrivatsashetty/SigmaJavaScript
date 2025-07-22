@@ -25,7 +25,7 @@ if(savedNotes) {
 formUserNote.addEventListener(
     "submit",
     (e) => {
-        e.preventDefault();
+        e.preventDefault(); // to prevent page refresh on form submit
         userNotes.title = noteTitle.value;
         userNotes.content = noteContent.value;
         
