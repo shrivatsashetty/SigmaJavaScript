@@ -5,44 +5,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rock Paper Scissor Game</title>
         <link rel="stylesheet" href="styles/style.css" />
-        <script src="scripts/script.js" defer></script>
+        <script src="scripts/script.js" type="module" defer></script>
     </head>
+
     <body>
         <h1>Rock - Paper - Scissors</h1>
 
         <div id="game-controls" class="container btns">
-            <button id="btn-rock" class="btn" type="button" value="Rock">
+            <button id="btn-rock" class="btn" type="button" value="1">
                 👊🏻
             </button>
-            <button id="btn-paper" class="btn" type="button" value="Paper">
+            <button id="btn-paper" class="btn" type="button" value="2">
                 ✋🏻
             </button>
-            <button id="btn-scissor" class="btn" type="button" value="Scissor">
+            <button id="btn-scissor" class="btn" type="button" value="3">
                 ✌🏻
             </button>
         </div>
 
         <div class="game-info">
             <div class="outcomes">
-                <p>PLAYER: Rock</p>
-                <p>COMPUTER: Scissor</p>
+                <p class="lbl-outcome" >USER: </p>
+                <p class="lbl-outcome" >COMPUTER: </p>
             </div>
 
-            <div class="results">
+            <div id="mssg-box" class="results">
                 <p id="para-txt-result">YOUR POINT!!</p>
             </div>
 
-            <div id="score-board" class="scores">
-                <table id="tbl-scores">
-                    <tr>
-                        <th>Your Score</th>
-                        <th>Computer's Score</th>
-                    </tr>
+            <div  class="scores">
+                <table id="scores-table">
+                    <thead>
+                        <tr>
+                            <th>Your Score</th>
+                            <th>Computer's Score</th>
+                        </tr>
+                    </thead>
 
-                    <tr>
-                        <td>1</td>
-                        <td>0</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>

@@ -56,7 +56,7 @@ td, th {
     width: 350px;
 }
 
-tr:nth-child(odd) {
+thead {
     background-color: hsla(9, 100%, 64%, 0.2);
 }
 
