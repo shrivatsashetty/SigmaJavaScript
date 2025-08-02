@@ -42,6 +42,12 @@ h1 {
     box-shadow: 3px 3px 3px;
 }
 
+#btn-restart {
+    padding: 10px;
+    font-size: larger;
+    border-radius: 40%;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -62,5 +68,7 @@ thead {
 
 .scores {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
 }

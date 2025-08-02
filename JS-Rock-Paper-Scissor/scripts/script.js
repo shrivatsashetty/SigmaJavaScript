@@ -12,12 +12,11 @@ let lblOutcomes = document.getElementsByClassName("lbl-outcome");
 
 let tblScoreCells = document.getElementById("scores-table").querySelector("tbody").rows[0].cells;
 
+let btnRestart = document.getElementById("btn-restart");
 
-// let choices = [rock, paper, scissor];
-// console.log(choices[0]);
-// console.log(choices[1]);
-// console.log(choices[2]);
-// // debugger;
+let controlBtns = document.querySelectorAll(".btn");
+
+let choices = [rock, paper, scissor];
 
 
 /* a function to generate random number from 0 to given number,
@@ -46,7 +45,15 @@ function announceWinner(winner) {
             mssgBox.style.color = "red";
             mssgBox.innerText = "You Loose!!!";
             break;
-    }    
+    }
+    
+    btnRestart.style.display = "block";
+
+    Array.from(controlBtns).forEach(
+        (btn) => {
+            btn.disabled = true;
+        }
+    );
 }
 
 function allocatePoints() {
@@ -88,3 +95,9 @@ document.getElementById("game-controls").addEventListener(
     }
 );
 
+btnRestart.addEventListener(
+    "click",
+    () => {
+        window.location.reload(); // refresh the page
+    }
+);
