@@ -1,0 +1,16 @@
+#img-pokemon-sprite {
+    display: none;
+}
+
+#btn-get-data {
+    height: 28px;
+}
+
+#txt-pokemon-name {
+    font-size: 1.5rem;
+}
+
+#img-pokemon-sprite {
+    width: 30vh;
+    height: 30vh;
+}
