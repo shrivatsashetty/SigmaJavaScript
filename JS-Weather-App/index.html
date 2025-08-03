@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/scripts.js" defer></script>
+    </head>
+    <body>
+        <div class="page-content">
+            <form id="frm-user-input" action="">
+                <input type="text" id="input-city-name" class="form-input" placeholder="Enter City">
+                <button type="submit" id="btn-submit" class="form-input" >Get Weather Info</button>
+            </form>
+
+            <div class="card">
+                <h2 id="lbl-location">Bengaluru</h2>
+                <h3 id="lbl-temperature">60.3*F</h3>
+                <p id="lbl-error">An Error Occured</p>
+                <p id="lbl-humidity" >Humidity: 81%</p>
+                <p id="lbl-weather-desc" >Overcast Clouds</p>
+                <p id="weather-emoji">⛅</p>
+            </div>
+        </div>
+    </body>
+</html>

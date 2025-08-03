@@ -1,0 +1,45 @@
+body {
+    background-color: azure;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.form-input {
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+/* target the button element of type submit */
+button[type="submit"] {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.card {
+    text-align: center;
+    border: 1px solid black;
+    padding: 0 75px;
+    border-radius: 25px;
+    background-image: linear-gradient(180deg, rgb(153, 226, 255), rgb(251, 223, 169));
+    display: none;
+}
+
+.card p {
+    text-transform: capitalize;
+}
+
+#lbl-error {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#weather-emoji {
+    font-size: 3rem;
+}
