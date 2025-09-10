@@ -1,4 +1,6 @@
 
+let clock = document.getElementById("clock");
+
 function displayCurrentTime() {
 
     let date = new Date();
@@ -17,8 +19,6 @@ function displayCurrentTime() {
     let strCurrentTime = `${currentHour12}:${currentMinute}:${currentSecond} ${meridiem}`;
 
     // console.log(strCurrentTime); // 8 : 48 : 3 PM
-
-    let clock = document.getElementById("clock");
     clock.innerText = strCurrentTime;
 }
 
